@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        languge-name: ['Polish', 'English']
-        language-code: ['pl','en']
         include:
           - languge-name: 'Polish'
             language-code: 'pl'

@@ -1,0 +1,10 @@
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        languge-name: ['Polish', 'English']
+        language-code: ['pl','en']
+    steps:
+      - name: test
+        run: echo "Current laguage is ${{ matrix.language-name }} with code ${{ matrix.language-code }}"

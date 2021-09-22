@@ -12,6 +12,11 @@ jobs:
       matrix:
         languge-name: ['Polish', 'English']
         language-code: ['pl','en']
+        include:
+          - languge-name: 'Polish'
+            language-code: 'pl'
+          - languge-name: 'English'
+            language-code: 'en'
     steps:
       - name: test
         run: echo "Current laguage is ${{ matrix.language-name }} with code ${{ matrix.language-code }}"
